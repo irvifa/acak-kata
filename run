@@ -1,0 +1,22 @@
+#!/bin/bash
+
+PROGRAM=AcakKata.java
+BINARY=AcakKata
+
+echo "Insert Your Choices"
+echo "1) Compile"
+echo "2) Run"
+echo "3) Clean current directory"
+
+read choice
+
+if (( "$choice" == "1" )); then
+	javac $PROGRAM
+elif (( "$choice" == "2" )); then
+	java $PROGRAM
+elif (( "$choice" == "3" )); then
+	rm *.class
+	echo "*.class Successfully removed"
+else
+	echo "Please enter 1, 2, or 3"
+fi
