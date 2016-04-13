@@ -13,7 +13,7 @@ read choice
 if (( "$choice" == "1" )); then
 	javac $PROGRAM
 elif (( "$choice" == "2" )); then
-	java $PROGRAM
+	java $BINARY
 elif (( "$choice" == "3" )); then
 	rm *.class
 	echo "*.class Successfully removed"
